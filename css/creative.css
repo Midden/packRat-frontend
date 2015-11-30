@@ -178,7 +178,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-color: grey;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -413,4 +413,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.files {
+    border: 1px solid grey;
 }
