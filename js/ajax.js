@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-  // $.ajaxSetup({
-  //   xhrFields: {
-  //       withCredentials: true
-  //   }
-  // });
+  $.ajaxSetup({
+    xhrFields: {
+        withCredentials: true
+    }
+  });
 
   var form2object = function(form) {
     var data = {};
@@ -33,8 +33,30 @@ $(document).ready(function() {
 
   $('#register').on('submit', function(e) {
         e.preventDefault();
-        var credentials = wrap('credentials', form2object(this));
+        var credentials = form2object(this);
+        console.log(credentials);
         packrat.register(credentials, callback);
+      });
+
+  $('#login').on('submit', function(e) {
+        var credentials = form2object(this);
+        var cb = function cb(error, data) {
+          if (error) {
+            callback(error);
+            return;
+          }
+          callback(null, data);
+          // $('.token').val(data.user.token);
+          // $('.id').val(data.user.id);
+          // console.log(data.user.token);
+          $('#login').each(function(){
+            this.reset();
+          });
+
+        };
+        e.preventDefault();
+        packrat.login(credentials, cb);
+
       });
 
 
