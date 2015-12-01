@@ -19,10 +19,10 @@ var packrat = {
       method: 'POST',
       url: this.url + '/signup',
       contentType: 'application/json',
-      data: JSON.stringify(credentials),
-      dataType: 'json'
+      data: JSON.stringify(credentials)
+      // dataType: 'text'
     }, callback);
-    console.log("success")
+    console.log("success");
   },
 
   login: function (credentials, callback) {
@@ -31,21 +31,21 @@ var packrat = {
       url: this.url + '/login',
       contentType: 'application/json',
       data: JSON.stringify(credentials),
-      dataType: 'json'
+      // dataType: 'json'
     }, callback);
-    console.log("success")
+    console.log("success");
   },
 
   logout: function (token, id, callback) {
     this.ajax({
       method: 'DELETE',
       url: this.url + '/logout/' + id,
-      // xhrFields: {
-      //   withCredentials: true
-      // },
+      xhrFields: {
+        withCredentials: true
+      },
       contentType: 'application/json',
       dataType: 'json'
     }, callback);
-    console.log("success")
+    console.log("success");
   }
 };
