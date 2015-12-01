@@ -66,14 +66,14 @@
                     </li>
                     <li class="dropdown">
                         <a href="#login" class="dropdown-toggle" data-toggle="dropdown">Login</a>
-                        <form role="form" class="dropdown-menu" style="padding: 15px;">
+                        <form id="login" role="form" class="dropdown-menu" style="padding: 15px;">
                           <div class="form-group">
                             <label for="email">Email address:</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="login-email">
                           </div>
                           <div class="form-group">
                             <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd">
+                            <input type="password" class="form-control" id="login-pwd">
                           </div>
                           <button type="submit" class="btn btn-primary">Login</button>
                         </form>
@@ -117,7 +117,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-2 btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color: #87CEFA;">Upload
+                    <button id="upload" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color: #87CEFA;">Upload
                     </button>
                     <ul class="dropdown-menu">
                         <li><a href="#">New File</a></li>
@@ -159,7 +159,7 @@
                     <hr class="primary">
                     <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
-                <form role="form" class="col-lg-4 col-lg-offset-4 text-center">
+                <form id="register" role="form" class="col-lg-4 col-lg-offset-4 text-center">
                   <div class="form-group ">
                     <label for="email">Email address:</label>
                     <input type="email" class="form-control" id="email">
@@ -227,6 +227,10 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <!-- AJAX/API -->
+    <script src="js/api.js"></script>
+    <script src="js/ajax.js"></script>
 
 </body>
 
