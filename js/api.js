@@ -36,10 +36,19 @@ var packrat = {
     console.log("success");
   },
 
-  logout: function (token, id, callback) {
+  upload: function (buffer) {
+    this.ajax({
+      method: 'POST',
+      url: this.url + '/images',
+      contentType: 'application/json'
+    }, callback);
+    console.log("upload success");
+  },
+
+  logout: function (id, callback) {
     this.ajax({
       method: 'DELETE',
-      url: this.url + '/logout/' + id,
+      url: this.url + '/logout',
       xhrFields: {
         withCredentials: true
       },
