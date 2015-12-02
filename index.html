@@ -52,19 +52,16 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    <li class="home-links">
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
+                    <li class="home-links">
                         <a class="page-scroll" href="#signup">Sign Up</a>
                     </li>
-                    <!-- <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li> -->
-                    <li>
+                    <li class="home-links">
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown home-links">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login</a>
                         <form id="login" role="form" class="dropdown-menu" style="padding: 15px;">
                           <div class="form-group">
@@ -78,7 +75,7 @@
                           <button type="submit" class="btn btn-primary">Login</button>
                         </form>
                     </li>
-                    <li style="display: none;">
+                    <li id="logout" style="display: none;">
                         <a href="#">Logout</a>
                     </li>
                 </ul>
@@ -88,7 +85,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
+    <header id="home-page">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>packRat Storage</h1>
@@ -117,14 +114,18 @@
             </div>
             <div class="row">
                 <div class="col-lg-2 btn-group">
-                    <button id="upload" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color: #87CEFA;">Upload
-                    </button>
-                    <ul class="dropdown-menu">
+                    <form id="upload">
+                    <input type="file" name="upload">
+                    <button type="submit">
+                    </form>
+                   <!--  <button id="upload" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color: #87CEFA;">Upload
+                    </button> -->
+                   <!--  <ul class="dropdown-menu">
                         <li><a href="#">New File</a></li>
                         <li><a href="#">New Folder</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="#">Create Folder</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-lg-10">
                     <h2>Files</h2>

@@ -16,11 +16,6 @@ $(document).ready(function() {
     });
     return data;
   };
-  var wrap = function wrap(root, formData) {
-    var wrapper = {};
-    wrapper[root] = formData;
-    return wrapper;
-  };
 
   var callback = function callback(error, data) {
     if (error) {
@@ -36,7 +31,7 @@ $(document).ready(function() {
         var credentials = form2object(this);
         console.log(credentials);
         packrat.register(credentials, callback);
-      });
+  });
 
   $('#login').on('submit', function(e) {
         var credentials = form2object(this);
@@ -46,9 +41,7 @@ $(document).ready(function() {
             return;
           }
           callback(null, data);
-          // $('.token').val(data.user.token);
-          // $('.id').val(data.user.id);
-          // console.log(data.user.token);
+
           $('#login').each(function(){
             this.reset();
           });
@@ -57,7 +50,45 @@ $(document).ready(function() {
         e.preventDefault();
         packrat.login(credentials, cb);
 
-      });
+        // $(".home-links").hide();
+        // // $("#home-page").hide();
+        // $("#about").hide();
+        // $("#signup").hide();
+        // $("#contact").hide();
 
+        // $("#logout").show();
+
+  });
+
+$("#upload").on('submit', function(e) {
+  e.preventDefault();
+  var reader = new FileReader();
+
+  reader.onload = function(event) {
+    packrat.upload(event.target.result);
+    awsUpload(event.target.result);
+  }
+})
+
+  $('#logout').on('click', function(e) {
+        e.preventDefault();
+        var cb = function cb(error, data) {
+          if (error) {
+            callback(error);
+            return;
+          }
+          callback(null, data);
+        };
+        packrat.logout(cb);
+
+        // $(".home-links").show();
+        // // $("#home-page").show();
+        // $("#about").show();
+        // $("#signup").show();
+        // $("#contact").show();
+
+        // $(".logged-in").hide();
+        // $("#logout").hide();
+  });
 
 });
