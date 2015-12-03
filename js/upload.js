@@ -1,10 +1,14 @@
 $(document).ready(function(){
 
+
 $('#upload').on('submit', function(e) {
     e.preventDefault();
     var formData = new FormData(e.target);
 
     $.ajax({
+       xhrFields: {
+        withCredentials: true
+      },
       url: 'http://localhost:3000/images',
       method: 'POST',
       contentType: false,

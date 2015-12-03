@@ -1,17 +1,20 @@
+
 var packrat = {
   url: 'http://localhost:3000',
 
+
   ajax: function (config, cb) {
+     $.ajaxSetup({
+      xhrFields: {
+        withCredentials: true
+      }
+    });
     $.ajax(config).done(function(data, textStatus, jqxhr) {
       cb(null, data);
     }).fail(function(jqxhr, status, error) {
       cb({jqxher: jqxhr, status: status, error: error});
     });
-    $.ajaxSetup({
-      xhrFields: {
-        withCredentials: true
-      }
-    });
+
   },
 
   register: function (credentials, callback) {
@@ -33,7 +36,7 @@ var packrat = {
       data: JSON.stringify(credentials),
       // dataType: 'json'
     }, callback);
-    console.log("success");
+    console.log(credentials);
   },
 
   // upload: function (buffer) {
