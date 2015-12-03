@@ -5,7 +5,7 @@ $('#upload').on('submit', function(e) {
     var formData = new FormData(e.target);
 
     $.ajax({
-      url: 'localhost:3000/images',
+      url: 'http://localhost:3000/images',
       method: 'POST',
       contentType: false,
       processData: false,
