@@ -67,8 +67,8 @@ $("#upload").on('submit', function(e) {
   reader.onload = function(event) {
     packrat.upload(event.target.result);
     awsUpload(event.target.result);
-  }
-})
+  };
+});
 
   $('#logout').on('click', function(e) {
         e.preventDefault();

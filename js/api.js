@@ -36,14 +36,14 @@ var packrat = {
     console.log("success");
   },
 
-  upload: function (buffer) {
-    this.ajax({
-      method: 'POST',
-      url: this.url + '/images',
-      contentType: 'application/json'
-    }, callback);
-    console.log("upload success");
-  },
+  // upload: function (buffer) {
+  //   this.ajax({
+  //     method: 'POST',
+  //     url: this.url + '/images',
+  //     contentType: 'application/json'
+  //   }, callback);
+  //   console.log("upload success");
+  // },
 
   logout: function (id, callback) {
     this.ajax({
