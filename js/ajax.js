@@ -46,29 +46,18 @@ $(document).ready(function() {
             this.reset();
           });
 
+          $(".home-links").hide();
+          // $("#home-page").hide();
+          $("#about").hide();
+          $("#signup").hide();
+          $("#contact").hide();
+
+          $("#logout").show();
         };
         e.preventDefault();
         packrat.login(credentials, cb);
 
-        // $(".home-links").hide();
-        // // $("#home-page").hide();
-        // $("#about").hide();
-        // $("#signup").hide();
-        // $("#contact").hide();
-
-        // $("#logout").show();
-
   });
-
-$("#upload").on('submit', function(e) {
-  e.preventDefault();
-  var reader = new FileReader();
-
-  reader.onload = function(event) {
-    packrat.upload(event.target.result);
-    awsUpload(event.target.result);
-  };
-});
 
   $('#logout').on('click', function(e) {
         e.preventDefault();
