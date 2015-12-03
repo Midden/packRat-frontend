@@ -115,8 +115,8 @@
             <div class="row">
                 <div class="col-lg-2 btn-group">
                     <form id="upload">
-                    <input type="file" name="upload">
-                    <button type="submit">
+                    <input id="file-upload" type="file" name="upload">
+                    <input type="submit" placeholder="Upload">
                     </form>
                    <!--  <button id="upload" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color: #87CEFA;">Upload
                     </button> -->
@@ -129,8 +129,8 @@
                 </div>
                 <div class="col-lg-10">
                     <h2>Files</h2>
-                    <div class="files">
-                        <ul>
+                    <div>
+                        <ul class="files">
 
                         </ul>
                     </div>
@@ -232,6 +232,7 @@
     <!-- AJAX/API -->
     <script src="js/api.js"></script>
     <script src="js/ajax.js"></script>
+    <script src="js/upload.js"></script>
 
 </body>
 
