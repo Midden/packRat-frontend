@@ -4,7 +4,7 @@ var packrat = {
 
 
   ajax: function (config, cb) {
-     $.ajaxSetup({
+    $.ajaxSetup({
       xhrFields: {
         withCredentials: true
       }
@@ -39,22 +39,10 @@ var packrat = {
     console.log(credentials);
   },
 
-  // upload: function (buffer) {
-  //   this.ajax({
-  //     method: 'POST',
-  //     url: this.url + '/images',
-  //     contentType: 'application/json'
-  //   }, callback);
-  //   console.log("upload success");
-  // },
-
   logout: function (id, callback) {
     this.ajax({
       method: 'DELETE',
       url: this.url + '/logout',
-      xhrFields: {
-        withCredentials: true
-      },
       contentType: 'application/json',
       dataType: 'json'
     }, callback);
