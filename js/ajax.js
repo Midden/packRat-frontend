@@ -1,3 +1,5 @@
+var packraturl = 'http://localhost:3000';
+
 $(document).ready(function() {
 
   $.ajaxSetup({
@@ -53,11 +55,37 @@ $(document).ready(function() {
           $("#contact").hide();
 
           $("#logout").show();
-        };
-        e.preventDefault();
+     };
+     e.preventDefault();
         packrat.login(credentials, cb);
 
   });
+
+  $('#get-files').on('click', function(e) {
+    var images = form2object(this);
+    var cb = function cb(error, data) {
+      if (error) {
+        callback(error);
+        return;
+      }
+      callback(null, data);
+
+      var urls = data;
+      // console.log(urls[0].path);
+
+      for (var i = 0; i < urls.length; i++) {
+        console.log(urls[i].path);
+        $(".files").append("<li>" + urls[i].url + "</li>");
+      }
+
+
+      // $(".files").append("<li>" + data + "</li>");
+    };
+    e.preventDefault();
+    packrat.showfiles(images, cb);
+  });
+
+
 
   $('#logout').on('click', function(e) {
         var cb = function cb(error, data) {
@@ -80,4 +108,4 @@ $(document).ready(function() {
         packrat.logout(cb);
   });
 
-});
+}); //document.ready
