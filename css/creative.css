@@ -178,7 +178,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-color: grey;
+    /*background-color: grey;*/
+    background-image: url('../img/packRat.jpg');
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
