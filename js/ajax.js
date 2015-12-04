@@ -74,8 +74,8 @@ $(document).ready(function() {
       // console.log(urls[0].path);
 
       for (var i = 0; i < urls.length; i++) {
-        console.log(urls[i].data);
-        $(".files").append("<li>" + urls[i].url.toString() + "</li>");
+        console.log(urls[i].name);
+        $(".files").append("<li>" + urls[i].name.toString() + "</li>");
       }
 
 
