@@ -85,7 +85,7 @@ $(document).ready(function() {
     packrat.showfiles(images, cb);
   });
 
-  $('#delete').on('submit', function(e) {
+  $('#deleteall').on('submit', function(e) {
     var image = form2object(this);
         var cb = function cb(error, data) {
           if (error) {
@@ -98,6 +98,20 @@ $(document).ready(function() {
         e.preventDefault();
         packrat.delete(image, cb);
         console.log("click handler success");
+  });
+
+  $("#deleteone").on('submit', function(e){
+    var image = form2object(this);
+      var cb = function cb(error, data) {
+        if (error) {
+            callback(error);
+            return;
+          }
+          callback(null, data);
+          console.log('success');
+        };
+        e.preventDefault();
+        packrat.deleteone(image, cb);
   });
 
   $('#logout').on('click', function(e) {
