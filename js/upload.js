@@ -5,6 +5,8 @@ $('#upload').on('submit', function(e) {
     e.preventDefault();
     var formData = new FormData(e.target);
 
+    formData.append('name', $("#filename").val());
+
     $.ajax({
        xhrFields: {
         withCredentials: true
@@ -24,4 +26,3 @@ $('#upload').on('submit', function(e) {
 
   });
 });
-
