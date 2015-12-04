@@ -33,10 +33,19 @@ var packrat = {
       method: 'POST',
       url: this.url + '/login',
       contentType: 'application/json',
-      data: JSON.stringify(credentials),
+      data: JSON.stringify(credentials)
       // dataType: 'json'
     }, callback);
     console.log(credentials);
+  },
+
+  showfiles: function(images, callback) {
+    this.ajax({
+      method: 'GET',
+      url: this.url + '/images',
+      contentType: 'application/json',
+      data: JSON.stringify(images)
+    }, callback);
   },
 
   logout: function (callback) {

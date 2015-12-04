@@ -16,6 +16,8 @@ $('#upload').on('submit', function(e) {
       data: formData
     }).done(function(data) {
       console.log((JSON.stringify(data, null, 2)));
+
+      $(".files").append('<li>' + data.url + '</li>');
     }).fail(function(jqxhr) {
       console.error(jqxhr);
     });
