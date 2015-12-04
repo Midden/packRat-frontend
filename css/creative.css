@@ -15,9 +15,14 @@ body {
 }
 
 body {
-   font-family: 'Amatic SC', cursive;
+   font-family: 'Architects Daughter', cursive;
+   font-size: 2em;
 }
 
+p {
+    font-size: 50px;
+    color: black;
+}
 hr {
     max-width: 50px;
     border-color: #87CEFA;
@@ -46,7 +51,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Architects Daughter', cursive, 2em;
+    font-size: 2em;
 }
 
 p {
@@ -56,7 +62,7 @@ p {
 }
 
 .bg-primary {
-    background-color: #87CEFA;
+    background-color: #B3E4F5;
 }
 
 .bg-dark {
@@ -193,6 +199,7 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    font-size: 1em;
 }
 
 header .header-content {
@@ -200,6 +207,7 @@ header .header-content {
     width: 100%;
     padding: 100px 15px;
     text-align: center;
+    font-size: 1em;
 }
 
 header .header-content .header-content-inner h {
@@ -207,6 +215,7 @@ header .header-content .header-content-inner h {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 1em;
 }
 
 header .header-content .header-content-inner hr {
@@ -215,7 +224,7 @@ header .header-content .header-content-inner hr {
 
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
     /*color: grey;*/
     color: rgba(255,255,255);
