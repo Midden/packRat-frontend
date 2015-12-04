@@ -39,12 +39,12 @@ var packrat = {
     console.log(credentials);
   },
 
-  logout: function (id, callback) {
+  logout: function (callback) {
     this.ajax({
       method: 'DELETE',
       url: this.url + '/logout',
       contentType: 'application/json',
-      dataType: 'json'
+      // dataType: 'json'
     }, callback);
     console.log("success");
   }
