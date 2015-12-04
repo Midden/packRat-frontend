@@ -1,3 +1,4 @@
+var image_id = '';
 
 var packrat = {
   url: 'http://localhost:3000',
@@ -48,12 +49,29 @@ var packrat = {
     }, callback);
   },
 
+  showone: function(image, callback) {
+    this.ajax({
+      method: 'GET',
+      url: this.url + '/images' + image_id,
+      contentType: 'application/json',
+      data: JSON.stringify(image)
+    }, callback);
+  },
+
   delete: function(image, callback) {
     this.ajax({
       method: 'DELETE',
       url: this.url + '/images',
       contentType: 'application/json',
       data: JSON.stringify(image)
+    }, callback);
+  },
+
+  deleteone: function(image, callback){
+    this.ajax({
+      method: 'DELETE',
+      url: this.url + '/images',
+      contentType: 'application/json'
     }, callback);
   },
 
