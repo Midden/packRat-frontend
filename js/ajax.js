@@ -60,24 +60,24 @@ $(document).ready(function() {
   });
 
   $('#logout').on('click', function(e) {
-        e.preventDefault();
         var cb = function cb(error, data) {
           if (error) {
             callback(error);
             return;
           }
           callback(null, data);
+
+          $(".home-links").show();
+          // $("#home-page").show();
+          $("#about").show();
+          $("#signup").show();
+          $("#contact").show();
+
+          $(".logged-in").hide();
+          $("#logout").hide();
         };
+        e.preventDefault();
         packrat.logout(cb);
-
-        // $(".home-links").show();
-        // // $("#home-page").show();
-        // $("#about").show();
-        // $("#signup").show();
-        // $("#contact").show();
-
-        // $(".logged-in").hide();
-        // $("#logout").hide();
   });
 
 });

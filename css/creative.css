@@ -3,7 +3,11 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+/*font-family: 'Indie Flower', cursive;
+font-family: 'Inconsolata', ;
+font-family: 'Exo', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Amatic SC', cursive; */
 html,
 body {
     width: 100%;
@@ -11,7 +15,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+   font-family: 'Amatic SC', cursive;
 }
 
 hr {
@@ -42,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Architects Daughter', cursive;
 }
 
 p {
@@ -78,7 +82,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Indie Flower', cursive;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -87,7 +91,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-weight: 700;
     color: #00BFFF;
 }
