@@ -19,10 +19,20 @@ $('#upload').on('submit', function(e) {
     }).done(function(data) {
       console.log((JSON.stringify(data, null, 2)));
 
-      $(".files").append('<li>' + data.url + '</li>');
+      $(".files").append('<li>' + data.name + '</li>');
     }).fail(function(jqxhr) {
       console.error(jqxhr);
     });
 
   });
 });
+
+// <li id=data.objectId>name</li>
+
+// <form>
+// id=something ObjectId: 2481029
+// id=new-file-name New file name: blah
+// submit
+
+// $("#something").val().remove()?
+// filter('#something').val().remove()
