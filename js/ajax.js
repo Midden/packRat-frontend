@@ -85,7 +85,19 @@ $(document).ready(function() {
     packrat.showfiles(images, cb);
   });
 
-
+  $('#delete').on('submit', function(e) {
+    var image = form2object(this);
+        var cb = function cb(error, data) {
+          if (error) {
+            callback(error);
+            return;
+          }
+          callback(null, data);
+          console.log('success');
+        };
+        e.preventDefault();
+        packrat.delete(cb);
+  });
 
   $('#logout').on('click', function(e) {
         var cb = function cb(error, data) {

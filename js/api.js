@@ -48,6 +48,15 @@ var packrat = {
     }, callback);
   },
 
+  delete: function(callback) {
+    this.ajax({
+      method: 'DELETE',
+      url: this.url + '/images',
+      contentType: 'application/json',
+      // data: JSON.stringify(image)
+    }, callback);
+  },
+
   logout: function (callback) {
     this.ajax({
       method: 'DELETE',
