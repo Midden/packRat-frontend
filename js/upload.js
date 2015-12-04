@@ -27,6 +27,33 @@ $('#upload').on('submit', function(e) {
   });
 });
 
+// $('#delete').on('submit', function(e) {
+//     e.preventDefault();
+//     var formData = new FormData();
+
+//     formData.append('name', $("#delete-filename").val());
+//     formData.append('_id', $("#file-id"). val());
+
+//     $.ajax({
+//        xhrFields: {
+//         withCredentials: true
+//       },
+//       url: 'http://localhost:3000/images',
+//       method: 'POST',
+//       contentType: false,
+//       processData: false,
+//       data: formData
+//     }).done(function(data) {
+//       console.log((JSON.stringify(data, null, 2)));
+
+//       // $(".files").append('<li> File Name: ' + data.name + ' ID: ' + data._id + '</li>');
+//     }).fail(function(jqxhr) {
+//       console.error(jqxhr);
+//     });
+
+//   });
+// });
+
 // <li id=data.objectId>name</li>
 
 // <form>
