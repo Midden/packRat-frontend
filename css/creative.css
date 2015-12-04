@@ -51,7 +51,7 @@ h6 {
 
 p {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 1.5;
 }
 
@@ -202,7 +202,7 @@ header .header-content {
     text-align: center;
 }
 
-header .header-content .header-content-inner h1 {
+header .header-content .header-content-inner h {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -217,7 +217,8 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    /*color: grey;*/
+    color: rgba(255,255,255);
 }
 
 @media(min-width:768px) {
