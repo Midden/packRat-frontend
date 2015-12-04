@@ -55,8 +55,8 @@ $(document).ready(function() {
           $("#contact").hide();
 
           $("#logout").show();
-     };
-     e.preventDefault();
+        };
+        e.preventDefault();
         packrat.login(credentials, cb);
 
   });
@@ -75,7 +75,7 @@ $(document).ready(function() {
 
       for (var i = 0; i < urls.length; i++) {
         console.log(urls[i].name);
-        $(".files").append("<li>" + urls[i].name.toString() + "</li>");
+        $(".files").append("<li> File Name: " + urls[i].name.toString() + " ID: " + urls[i]._id.toString() + "</li>");
       }
 
 
