@@ -62,6 +62,7 @@ $(document).ready(function() {
   });
 
   $('#get-files').on('click', function(e) {
+    $(".files").html('');
     var images = form2object(this);
     var cb = function cb(error, data) {
       if (error) {
@@ -94,6 +95,7 @@ $(document).ready(function() {
         return;
       }
       callback(null, data);
+      $('#update').reset();
     };
     e.preventDefault();
     packrat.update(image, cb);
