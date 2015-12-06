@@ -15,9 +15,16 @@ A link to your ERD - what data models does your app use?
 #Wireframes – sketches of major views / interfaces in your application.
 
 Wireframes
+
+
 ![copy of packrat_landingview](https://cloud.githubusercontent.com/assets/14185415/11615328/98eb343e-9c2b-11e5-88d9-63889491a146.jpg)
 
-Action Plan
+Under the Hood in Mongo DB
+
+![materialized paths](https://cloud.githubusercontent.com/assets/14185415/11615346/1b757586-9c2c-11e5-99a0-1da34205379d.jpg)
+
+
+Workflow Action Plan
 ![FileBucket.pdf](https://github.com/Midden/packRat-frontend/files/53267/FileBucket.pdf)
 
 
