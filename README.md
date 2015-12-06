@@ -94,4 +94,4 @@ A link to the deployed front-end app.
 
 
 link to the  back-end repo:
-https://github.com/Midden/packRat-backend2/edit/master/README.md
+https://github.com/Midden/packRat-backend2
