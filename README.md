@@ -38,9 +38,19 @@ Wednesday Pre-project week meeting with Antony game plan notes:
 
 WDI Express Multer lesson is the framework for the express apps...Materialized Paths are the way to go for setting up queries...he’s written materialized paths in Postgresql, and he said he’d help us step through it, once we get to the point where we are writing query commands.
 
-Suggested problem to solve first:
-
-create the bones of the app...express...mongo etc... Create user account create-creating a directory -materialized paths create-uploading a file in the directory -materialized paths read-querying for that file -materialized paths delete-removing the file from directory -we need to set up AWS permissions a little differently than his example - we need to add a remove permission. create-creating another directory Update - moving a file from the first directory into that directory… update-renaming directories/files read-creating a directory within a directory and searching for documents within that directory from the root. multiple users on one account. delete-remove whole directories - he suggested this to be last, because it involves a lot more manipulation with AWS and it make our db messy, so get the thing working and then make it messy.
+#Suggested problem to solve first:  Last Updated Sunday, December 6th, 3:30pm.
+DONE - Create the bones of the app...express...mongo etc...
+DONE -Create user account
+NO DIRCETORY NEEDED - create-creating a directory -materialized paths
+DONE -Creating and uploading a file referenced and accessibly by userName -materialized paths
+DONE -read-querying for that file -materialized paths
+DONE -delete-removing the file from directory -we need to set up AWS permissions a little differently than his example -  we need to add a remove permission.
+REACH GOAL-create-creating another directory
+REACH GOAL- Update - moving a file from the first directory into that directory…
+NEED-update-renaming directories/files
+ REACH GOALread-creating a directory within a directory and searching for documents within that directory from the root.
+multiple users on one account.
+ DONE-delete-remove whole directories - he suggested this to be last, because it involves a lot more manipulation with AWS and it make our db messy, so get the thing working and then make it messy.
 
 How the parts work together
 
