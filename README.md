@@ -14,7 +14,7 @@ A link to your user stories – who are your users, what do they want, and why?
 A link to your ERD - what data models does your app use?
 #Wireframes – sketches of major views / interfaces in your application.
 
-
+![copy of packrat_landingview](https://cloud.githubusercontent.com/assets/14185415/11615328/98eb343e-9c2b-11e5-88d9-63889491a146.jpg)
 
 
 
