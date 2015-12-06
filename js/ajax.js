@@ -85,6 +85,20 @@ $(document).ready(function() {
     packrat.showfiles(images, cb);
   });
 
+  $('#update').on('submit', function(e) {
+    var image = form2object(this);
+    console.log(image);
+    var cb = function cb(error, data) {
+      if (error) {
+        callback(error);
+        return;
+      }
+      callback(null, data);
+    };
+    e.preventDefault();
+    packrat.update(image, cb);
+  });
+
   $('#deleteall').on('submit', function(e) {
     var image = form2object(this);
         var cb = function cb(error, data) {
