@@ -16,8 +16,14 @@ A link to your ERD - what data models does your app use?
 
 Wireframes
 
+Functionality Outline for landing page:
 
 ![copy of packrat_landingview](https://cloud.githubusercontent.com/assets/14185415/11615328/98eb343e-9c2b-11e5-88d9-63889491a146.jpg)
+
+Logged in Functionality
+
+![packrat_view_logged_in](https://cloud.githubusercontent.com/assets/14185415/11615368/9cb7faa6-9c2c-11e5-8e38-80b8ec15228e.jpg)
+
 
 Under the Hood in Mongo DB
 
