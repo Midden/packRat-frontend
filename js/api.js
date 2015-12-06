@@ -49,13 +49,23 @@ var packrat = {
     }, callback);
   },
 
-  showone: function(image, callback) {
+  // showone: function(image, callback) {
+  //   this.ajax({
+  //     method: 'GET',
+  //     url: this.url + '/images/' + image_id,
+  //     contentType: 'application/json',
+  //     data: JSON.stringify(image)
+  //   }, callback);
+  // },
+
+  update: function(image, callback) {
     this.ajax({
-      method: 'GET',
-      url: this.url + '/images/' + image_id,
+      method: 'PATCH',
+      url: this.url + '/images/file',
       contentType: 'application/json',
-      data: JSON.stringify(image)
-    }, callback);
+      data: JSON.stringify(image),
+      dataType: 'json'
+    });
   },
 
   deleteall: function(image, callback) {
