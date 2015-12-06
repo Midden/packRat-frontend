@@ -96,7 +96,7 @@ $(document).ready(function() {
           console.log('success');
         };
         e.preventDefault();
-        packrat.delete(image, cb);
+        packrat.deleteall(image, cb);
         console.log("click handler success");
   });
 
@@ -111,7 +111,9 @@ $(document).ready(function() {
           console.log('success');
         };
         e.preventDefault();
+        console.log(image);
         packrat.deleteone(image, cb);
+        packrat.deletefile(image, cb);
   });
 
   $('#logout').on('click', function(e) {

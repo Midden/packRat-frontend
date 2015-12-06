@@ -52,13 +52,13 @@ var packrat = {
   showone: function(image, callback) {
     this.ajax({
       method: 'GET',
-      url: this.url + '/images' + image_id,
+      url: this.url + '/images/' + image_id,
       contentType: 'application/json',
       data: JSON.stringify(image)
     }, callback);
   },
 
-  delete: function(image, callback) {
+  deleteall: function(image, callback) {
     this.ajax({
       method: 'DELETE',
       url: this.url + '/images',
@@ -69,9 +69,21 @@ var packrat = {
 
   deleteone: function(image, callback){
     this.ajax({
+      method: 'PATCH',
+      url: this.url + '/images/deleteone' ,
+      contentType: 'application/json',
+      data: JSON.stringify(image),
+      dataType: 'json'
+    }, callback);
+  },
+
+  deletefile: function(image, callback){
+    this.ajax({
       method: 'DELETE',
-      url: this.url + '/images',
-      contentType: 'application/json'
+      url: this.url + '/images/deleteone',
+      contentType: 'application/json',
+      data: JSON.stringify(image),
+      dataType: 'json'
     }, callback);
   },
 
