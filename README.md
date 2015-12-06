@@ -1,4 +1,6 @@
-#FileBucket
+#WDI PROJECT 3 FileBucket
+Team Turing:
+Jeff, Kayla and Edie
 
 #Build a Dropbox-like app that allows users to upload files into a virtual file system. In addition to keeping track of file structure, this app should associate meta-data with each file, including things like:
 
