@@ -58,7 +58,7 @@ How the parts work together
 
 Express App handles the functionality/interpretation of query meoths of the stuff coming from and going to database - MongoDB stores descriptions/details/structure for files that are actually being stored in AWS. ---- We only get 5GB of storage on AWS, so we can’t store big sample data...even though MongoDB can handle documents up to 16GB size...might be worth commenting about in readME.
 
-https://github.com/Midden/packRat-frontend
+
 
 resources Scott, Dave, Lena you need to NPM install use express multer use express passport
 
@@ -137,7 +137,7 @@ Dependencies/Modules/Middleware
   "devDependencies": {
     "errorhandler": "^1.4.2"
   
-
+https://github.com/Midden/packRat-backend2
 
 
 
