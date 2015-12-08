@@ -1,4 +1,4 @@
-var packraturl = 'http://localhost:3000';
+var packraturl = 'https://vast-citadel-1448.herokuapp.com/';
 
 $(document).ready(function() {
 
