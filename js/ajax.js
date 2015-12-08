@@ -1,4 +1,4 @@
-var packraturl = 'https://vast-citadel-1448.herokuapp.com/';
+var packraturl = 'https://vast-citadel-1448.herokuapp.com';
 
 $(document).ready(function() {
 
