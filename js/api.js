@@ -1,7 +1,7 @@
 var image_id = '';
 
 var packrat = {
-  url: 'https://vast-citadel-1448.herokuapp.com/',
+  url: 'https://vast-citadel-1448.herokuapp.com',
 
 
   ajax: function (config, cb) {
