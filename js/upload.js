@@ -19,7 +19,7 @@ $('#upload').on('submit', function(e) {
     }).done(function(data) {
       console.log((JSON.stringify(data, null, 2)));
 
-        $(".files").append("<li> File: " + "<a href=" + data.url + ">" + data.name + "</a>" + " ID: " + data._id + " Create at: " + data.createdAt +"</li>");
+        $(".files").append("<li><b> File: </b>" + "<a href=" + data.url + ">" + data.name + "</a>" + "<b> ID: </b>" + data._id + "<b> Create at: </b>" + data.createdAt +"</li>");
     }).fail(function(jqxhr) {
       console.error(jqxhr);
     });
