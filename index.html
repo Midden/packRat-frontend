@@ -109,32 +109,36 @@
                 <h1>packRat</h1>
                 <hr>
             </div>
-            <div class="col-lg-10">
+            <!-- <div class="col-lg-10">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search..">
                     <span class="input-group-btn">
                         <button class="btn btn-primary" type="button">Search</button>
                     </span>
                 </div>
-            </div>
+            </div> -->
             </div>
             <!-- ____________________UPLOAD FORM_________________-->
             <div class="row">
-                <div class="col-lg-2 btn-group">
-                    <form id="upload">
-                        <label> File Name: </label>
-                        <input id="filename" type="text">
-                        <input id="file-upload" type="file" name="file">
-                        <input type="submit" value="Upload">
-                    </form>
-                   <button id="get-files">Get Files</button>
+                <section class="col-sm-4 col-md-6 col-lg-4">
+                    <div class="col-lg-2 btn-group">
+                        <form id="upload">
+                            <input id="filename" type="text" placeholder="File Name">
+                            <input id="file-upload" type="file" name="file">
+                            <input type="submit" value="Upload">
+                        </form>
+                        <button id="get-files">Get Files</button>
+                </section>
                    <!-- UPDATE ONE FORM -->
+                <section class="col-sm-4 col-md-3 col-lg-4">
                     <form id="update">
                         <input name="imageid" type="text" placeholder="Insert ID">
                         <input name="newfilename" type="text" placeholder="New Name">
                         <input type="submit" value="Update File Name">
                     </form>
+                </section>
                     <!-- DELETE ONE FORM -->
+                <section class="col-sm-4 col-md-3 col-lg-4">
                     <form id="deleteone">
                         <input name="onefile" type="text" placeholder="Insert ID">
                         <input type="submit" value="Delete A File">
@@ -143,9 +147,10 @@
                     <form id="deleteall">
                         <input type="submit" value="Delete All">
                     </form>
-                </div>
-                <div class="col-lg-10">
-                    <h2>Files</h2>
+                </section>
+            </div>
+            <div class="col-lg-10">
+                <h2>Files</h2>
                     <div>
                         <ul class="files">
 

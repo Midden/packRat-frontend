@@ -74,7 +74,7 @@ p {
     color: rgba(255,255,255,.7);
 }
 form {
-    font-size: 2em;
+    font-size: 1em;
 }
 section {
     padding: 100px 0;
@@ -397,10 +397,10 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn {
-    border: 0;
+    border: 5;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Architects Daughter', cursive;
     font-weight: 700;
 }
 
