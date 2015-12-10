@@ -19,7 +19,8 @@ $('#upload').on('submit', function(e) {
     }).done(function(data) {
       console.log((JSON.stringify(data, null, 2)));
 
-      $(".files").append('<li> File Name: ' + data.name + ' ID: ' + data._id + '</li>');
+        $(".files").append("<li> File: " + "<a href=" + urls[i].url.toString() + ">" + urls[i].name.toString() + "</a>" + " ID: " + urls[i]._id.toString() + " Create at: " + urls[i].createdAt +"</li>");
+      }
     }).fail(function(jqxhr) {
       console.error(jqxhr);
     });
