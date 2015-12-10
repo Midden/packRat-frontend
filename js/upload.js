@@ -11,7 +11,7 @@ $('#upload').on('submit', function(e) {
        xhrFields: {
         withCredentials: true
       },
-      url: 'http://localhost:3000/images',
+      url: 'https://radiant-dusk-6766.herokuapp.com//images',
       method: 'POST',
       contentType: false,
       processData: false,

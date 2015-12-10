@@ -1,4 +1,4 @@
-var packraturl = 'http://localhost:3000';
+var packraturl = 'https://radiant-dusk-6766.herokuapp.com/';
 
 $(document).ready(function() {
 
