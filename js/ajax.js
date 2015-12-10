@@ -77,7 +77,7 @@ $(document).ready(function() {
 
       for (var i = 0; i < urls.length; i++) {
         console.log(urls[i].name);
-        $(".files").append("<li> File Name: " + urls[i].name.toString() + " ID: " + urls[i]._id.toString() + "</li>");
+        $(".files").append("<li> File Name: " + urls[i].name.toString() + " ID: " + urls[i]._id.toString() + " Link: " + urls[i].url.toString() + "</li>");
       }
 
 
